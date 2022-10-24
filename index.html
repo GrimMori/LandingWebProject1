@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">             ----------------------------------------
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> -------------NO SÉ QUÉ ES ESTO-------- -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="stylesheet.css"> <!-- link al stylesheet -->
         <title>Off The Grid</title>
@@ -10,62 +10,84 @@
     
     <body>
         <div id="top"></div>
-        <nav id="menu"> <!-- menú de navegación -->
-            <a href="#mission">Misión</a>
-            <a href="#about">Historia</a>
-            <a href="#idea">Idea</a>
-            <a href="#portfolio">Portfolio</a>
-        </nav>
         <header id="header">
             <h1>Off The Grid</h1> <!-- título de la página, podría cambiarse por un logo (imagen)-->
             <h2>Servicios de desarrollo web</h2>
         </header>
+        <nav id="menu"> <!-- menú de navegación -->
+            <a class="button" href="#mission">Misión</a>
+            <a class="button" href="#about">Historia</a>
+            <a class="button" href="#idea">Idea</a>
+            <a class="button" href="#portfolio">Portfolio</a>
+        </nav>
         <main>
-            <section class ="section" id="mission">
-                <h3>Misión</h3>
-                <p>Queremos crear contenido de calidad, consciente y accesible para todo el mundo.</p>
-                <img src="">
-            </section>
-            <section class ="section" id="about">
-                <h3>Historia</h3>
-                <p>Somos un equipo pequeño de estudiantes de desarrollo web full stack muy motivado. Tenemos backgrounds y experiencia muy diversa.</p>
-            </section>
-            <section class ="section" id="idea"> <!-- no sé qué hay que escribir aquí -->
-                <h3>Idea</h3>
-                <p>Nuestra idea es ofrecer servicios de manera accesible, transparente y cercana.</p>
-            </section>
+            <div class="caja-uno">
+                <section class ="section" id="mission">
+                    <img id="foto-mision" src="media/foto_comunicacion_mision.jpg" alt="stock photo of a phone with applications" height="256">
+                    <div>
+                        <h3>Misión</h3>
+                        <p>Queremos crear contenido de calidad, consciente y accesible para todo el mundo.</p>
+                    </div>
+                </section>
+                <section class ="section" id="about">
+                    <div>
+                        <h3>Historia</h3>
+                        <p>Somos un equipo pequeño de estudiantes de desarrollo web full stack muy motivado. Tenemos backgrounds y experiencia muy diversa.</p>
+                    </div>
+                    <img src="media/fotoblogene2709.png" height="256" alt="stock photo of a team with gears">
+                </section>
+                <section class ="section" id="idea">
+                    <img src="media/foto_idea_distinguecompetencia.jpg" alt="stock photo of people growing plants with lightbulbs as flowers" height="256">
+                    <div>
+                        <h3>Idea</h3>
+                    <p>Nuestra idea es ofrecer servicios de manera accesible, transparente y cercana.</p>
+                    </div>
+                </section>
+            </div>
             <section class ="section" id="portfolio"> <!-- imágenes con enlace a nueva pestaña para que se vean en tamaño completo -->
                 <h3>Portfolio</h3>
-                <a href="media/portfolio_arnau.png" target="_blank" rel="noopener">
-                    <img src="media/portfolio_arnau.png" alt="example of a webpage" width="512" height=""/>
-                </a>
-                <a href="media/portfolio_manuel.png" target="_blank" rel="noopener">
-                    <img src="media/portfolio_manuel.png" alt="example of a webpage" width="512" height=""/>
-                </a>
-                <a href="media/portfolio_arnau.png" target="_blank" rel="noopener">
-                    <img src="media/portfolio_arnau.png" alt="example of a webpage" width="512" height=""/>
-                </a>
-                <a href="media/portfolio_manuel.png" target="_blank" rel="noopener">
-                    <img src="media/portfolio_manuel.png" alt="example of a webpage" width="512" height=""/>
-                </a>
+                <div>
+                    <a href="media/portfolio_arnau.png" target="_blank" rel="noopener">
+                        <img src="media/portfolio_arnau.png" alt="example of a webpage" width="512" height=""/>
+                    </a>
+                    <a href="media/portfolio_manuel.png" target="_blank" rel="noopener">
+                        <img src="media/portfolio_manuel.png" alt="example of a webpage" width="512" height=""/>
+                    </a>
+                    <a href="media/portfolio_valeria.png" target="_blank" rel="noopener">
+                        <img src="media/portfolio_valeria.png" alt="example of a webpage" width="512" height=""/>
+                    </a>
+                    <a href="media/portfolio_victor.png" target="_blank" rel="noopener">
+                        <img src="media/portfolio_victor.png" alt="example of a webpage" width="512" height=""/>
+                    </a>
+                </div>
             </section>
             <section id="form"> <!-- formulario de suscripción -->
-                <form action="" method="">
-                    <label>Nombre</label>
-                    <input type="text" required>
-                    <label>Apellidos</label>
-                    <input type="text">
-                    <label>email</label>
-                    <input type="email" required>
-                    <textarea id="consulta" rows="3" cols="40"></textarea>
-                    <input type="submit">
+                <form action="" method="post">
+                    <h3>Formulario de suscripción</h3>
+                    <div>
+                        <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" required placeholder="Nombre Completo">
+                    </div>
+                    <div>
+                        <label for="phone">Teléfono</label>
+                    <input type="text" id="phone" required placeholder="Teléfono">
+                    </div>
+                    <div>
+                        <label for="email">email</label>
+                    <input type="email" id="email" required placeholder="email">
+                    </div>
+                    <!-- <textarea id="consulta" rows="3" cols="40"></textarea> -->
+                    <input id="submitbutton" type="submit">
                 </form>
             </section>
-            <nav> <!-- botón para volver arriba -->
+            <nav id="topbutton"> <!-- botón para volver arriba -->
                 <a href="#top">
                     <img src="resources/backtotopbutton.png" width="64">
                 </a>
             </nav>
         </main>
+        <footer>
+            Hecho por Off The Grid: Victor Hugo, Arnau Mínguez, Valeria Sánchez, Manuel Sobrado.
+        </footer>
     </body>
 </html>

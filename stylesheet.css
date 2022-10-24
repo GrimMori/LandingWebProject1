@@ -1,4 +1,113 @@
-main{
+html{
+    background-color: #83b1cf;
+    background-image: url(resources/background.png);
+    background-size: cover;
+}
+
+@font-face{
+    font-family: Title;
+    src: url(resources/cream_cake.otf)
+}
+
+header{
+    text-align: center;
+}
+
+body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: justify;
+}
+
+h1{
+    font-family: Title;
+    font-size: 100px;
+    margin-top: auto;
+    margin-bottom: 0%;
+}
+
+h2{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+h3{
+    font-size: 32px;
+}
+
+p{
+    font-size: 24px;
+}
+
+#menu{
+    text-align: center;
+}
+
+/*.button{
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    text-decoration: ;
+    padding: 4px;
+    border-color: #000000
+}*/
+
+.caja-uno{
+    background-color: #acd4e1;
+    width: 75%;
+    margin: auto;
+    padding: 5%;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+.section{
+    display: flex;
+    align-items: center;
+}
+
+#mission{
+    padding-left: 20px;
+}
+
+#historia div{
+    text-align: right;
+    margin-left: 20px;
+}
+
+.section img{
+    margin: 10px;
+}
+
+#portfolio{
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-flow: wrap;
+    text-align: center;
+    justify-content: center;
+    max-width: 1500px;
+}
+
+#form{
+    margin: auto;
+    margin-bottom: 100px;
+    text-align: center;
+    background-color: #acd4e1;
+    width: 50%;
+    border-radius: 10px;
+}
+
+#form input{
+    margin-bottom: 15px;
+}
+
+#topbutton{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+footer{
+    text-align: center;
+    opacity: 66%;
 }
