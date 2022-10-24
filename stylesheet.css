@@ -1,5 +1,4 @@
 html{
-    background-color: #83b1cf;
     background-image: url(resources/background.png);
     background-size: cover;
 }
@@ -42,6 +41,18 @@ p{
     text-align: center;
 }
 
+.button{
+    margin-left: 8px;
+    margin-right: 8px;
+    font-size: 30px;
+    color: rgb(37, 40, 78);
+    text-decoration: none;
+}
+
+.button:hover{
+    color: rgb(138, 184, 196);
+}
+
 /*.button{
     border-style: solid;
     border-width: 1px 1px 1px 1px;
@@ -57,20 +68,28 @@ p{
     padding: 5%;
     margin-top: 20px;
     border-radius: 15px;
+    display:block;
 }
 
 .section{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 #mission{
     padding-left: 20px;
 }
 
-#historia div{
+#historia{
+    display: flex;
+    justify-content: right;
+    justify-items: right;
+    justify-self: right;
     text-align: right;
-    margin-left: 20px;
+    align-items: right;
+    align-content: right;
+    align-self: right;
 }
 
 .section img{
@@ -86,6 +105,11 @@ p{
     text-align: center;
     justify-content: center;
     max-width: 1500px;
+    opacity: 100%;
+}
+
+#portfolio img:hover{
+    opacity: 90%;
 }
 
 #form{
@@ -93,7 +117,8 @@ p{
     margin-bottom: 100px;
     text-align: center;
     background-color: #acd4e1;
-    width: 50%;
+    width: 40%;
+    padding: 15px;
     border-radius: 10px;
 }
 
@@ -102,12 +127,18 @@ p{
 }
 
 #topbutton{
+    opacity: 75%;
     position: fixed;
     bottom: 50px;
     right: 50px;
 }
 
+#topbutton:hover{
+    opacity: 100%;
+}
+
 footer{
+    font-size: 20px;
     text-align: center;
     opacity: 66%;
 }
